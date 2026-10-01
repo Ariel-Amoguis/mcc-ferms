@@ -450,6 +450,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Icon(
                       Icons.person_4_outlined,
+                      color: Colors.white,
                     ),
                   ],
                 ),
