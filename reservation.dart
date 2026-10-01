@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFD),
+      backgroundColor: Color.fromARGB(255, 24, 14, 16),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
@@ -38,6 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Text('Reservations',
                   style: TextStyle(
                     fontSize: 27,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                   ),
@@ -56,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 55,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 67, 67, 67),
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(25)
                 ),
                 child: Stack(
                   children: [
@@ -86,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 85,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 67, 67, 67),
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(25)
                 ),
                 child: Stack(
                   children: [
@@ -116,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 90,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 67, 67, 67),
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(25)
                 ),
                 child: Stack(
                   children: [
@@ -150,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 85,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 67, 67, 67),
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(25)
                 ),
                 child: Stack(
                   children: [
@@ -180,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 90,
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 67, 67, 67),
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(25)
                 ),
                 child: Stack(
                   children: [
@@ -212,7 +213,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 0, 0, 0),
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(15)
                 ),
                 child: Stack(
@@ -283,7 +284,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 32, 31, 31),
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(10)
                 ),
                 child: Stack(
@@ -354,7 +355,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 27, 26, 26),
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(10)
                 ),
                 child: Stack(
@@ -425,7 +426,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 27, 26, 26),
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(10)
                 ),
                 child: Stack(
@@ -496,7 +497,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 27, 26, 26),
+                  color: Colors.black,
                   borderRadius: BorderRadius.circular(10)
                 ),
                 child: Stack(
@@ -564,21 +565,24 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(height: 200),
-              Container(
+              Center(
+                child: Container(
                 height: 70,
+                width: 500,
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDDEAFF),
+                  color: const Color.fromARGB(255, 44, 26, 29),
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(
                       Icons.home_outlined,
                     ),
                     Icon(
                       Icons.calendar_today_outlined,
+                      color: Colors.white
                     ),
                     CircleAvatar(
                       radius: 25,
@@ -596,6 +600,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
+              ),
               ),
             ],
           ),
