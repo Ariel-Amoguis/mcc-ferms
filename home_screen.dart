@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFD),
+      backgroundColor: const Color.fromARGB(255, 24, 14, 16),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
@@ -74,6 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text('Welcome to MCC FERMS', 
                   style: TextStyle(fontSize: 25,
+                  color: Colors.white,
                     fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -83,6 +84,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text('Sign in to reserve facilities and equipment',
+                  style: TextStyle(
+                    color: Colors.grey
+                  ),
                   ),
                 ],
               ),
@@ -90,7 +94,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 30,
               ),
               Text(
-                'Student ID / Email'
+                'Student ID / Email',
+                style: TextStyle(
+                  color: Colors.white
+                ),
               ),
               Column(
                 children: [
@@ -98,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 50,
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFDDEAFF),
+                      color: const Color.fromARGB(255, 78, 69, 71),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     child: const Row(
@@ -107,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Text(
                       'e.g. 2425-0001 or name@mcc.edu.ph',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 54, 48, 48),
+                        color: Colors.grey,
                         fontSize: 15,
                       ),
                     ),
@@ -120,7 +127,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 20,
               ),
               Text(
-                'Password'
+                'Password',
+                style: TextStyle(
+                  color: Colors.white
+                ),
               ),
               Column(
                 children: [
@@ -128,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 50,
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFDDEAFF),
+                      color: const Color.fromARGB(255, 78, 69, 71),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     child: const Row(
@@ -137,13 +147,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     Text(
                       'Enter your password',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 54, 48, 48),
+                        color: Colors.grey,
                         fontSize: 15,
                       ),
                     ),
                     Icon(
                         Icons.visibility,
-                        color: Color.fromARGB(255, 54, 48, 48),
+                        color: Colors.grey,
                         size: 15,
                       ),
                   ],
@@ -162,9 +172,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       Icon(
                         Icons.check_box_outline_blank,
                         size: 20,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 4),
-                      Text('Remember Me'),
+                      Text('Remember Me',
+                      style: TextStyle(
+                        color: Colors.white
+                      ),),
                     ],
                   ),
                   Text(
@@ -208,7 +222,11 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Having trouble?'),
+                  Text('Having trouble?',
+                  style: TextStyle(
+                    color: Colors.grey
+                  ),),
+                  SizedBox(width: 5,),
                   Text(
                     'Contact Administrator',
                     style: TextStyle(
@@ -219,15 +237,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               SizedBox(height: 300),
-              Container(
-                height: 75,
+              Center(
+                child: Container(
+                height: 70,
+                width: 500,
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDDEAFF),
+                  color: const Color.fromARGB(255, 44, 26, 29),
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(
                       Icons.home_outlined,
@@ -251,6 +271,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
+              ),
               ),
             ],
           ),
