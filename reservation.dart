@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 45,
                 width: 55,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 67, 67, 67),
+                  color: Colors.red,
                   borderRadius: BorderRadius.circular(25)
                 ),
                 child: Stack(
