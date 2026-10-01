@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFD),
+      backgroundColor:  Color.fromARGB(255, 24, 14, 16),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text('Inbox',
                   style: TextStyle(
+                    color: Colors.white,
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
                   ),
@@ -47,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 177, 173, 173),
+                  color: const Color.fromARGB(255, 78, 69, 71),
                   borderRadius: BorderRadius.circular(20)
                 ),
                 child: Stack(
@@ -74,8 +75,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(
                             'Reservation Approved',
                             style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.black,
+                              fontSize: 20,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold
                             ),
                           ),     
@@ -86,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black),
+                              color: Colors.grey),
                           ),
                         ],
                     ),
@@ -100,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Gymnasium booking was confirmed',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                           ),
                         ],
@@ -113,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 177, 173, 173),
+                  color: const Color.fromARGB(255, 78, 69, 71),
                   borderRadius: BorderRadius.circular(20)
                 ),
                 child: Stack(
@@ -143,8 +144,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(
                             'Equipment Request Update',
                             style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.black,
+                              fontSize: 20,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold
                             ),
                           ),     
@@ -155,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black),
+                              color: Colors.grey),
                           ),
                         ],
                     ),
@@ -169,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Speaker and Microphone request is pending admin review',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                           ),
                         ],
@@ -182,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 177, 173, 173),
+                  color: const Color.fromARGB(255, 78, 69, 71),
                   borderRadius: BorderRadius.circular(20)
                 ),
                 child: Stack(
@@ -204,8 +205,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(
                             'Return Reminder',
                             style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.black,
+                              fontSize: 20,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold
                             ),
                           ),     
@@ -216,7 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black),
+                              color: Colors.grey),
                           ),
                         ],
                     ),
@@ -230,7 +231,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Projector is due back tomorrow',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                           ),
                         ],
@@ -243,7 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                 height: 90,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 177, 173, 173),
+                  color: const Color.fromARGB(255, 78, 69, 71),
                   borderRadius: BorderRadius.circular(20)
                 ),
                 child: Stack(
@@ -265,8 +266,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           Text(
                             'Reservation Approved',
                             style: TextStyle(
-                              fontSize: 25,
-                              color: Colors.black,
+                              fontSize: 20,
+                              color: Colors.white,
                               fontWeight: FontWeight.bold
                             ),
                           ),     
@@ -277,7 +278,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.black),
+                              color: Colors.grey),
                           ),
                         ],
                     ),
@@ -291,7 +292,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Cultural Hall booking was confirmed',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Colors.grey,
                             ),
                           ),
                         ],
@@ -301,15 +302,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               SizedBox(height: 300),
-              Container(
+              Center(
+                child: Container(
                 height: 70,
+                width: 500,
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDDEAFF),
+                  color: const Color.fromARGB(255, 44, 26, 29),
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(
                       Icons.home_outlined,
@@ -327,12 +330,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Icon(
                       Icons.email_outlined,
+                      color: Colors.white,
                     ),
                     Icon(
                       Icons.person_4_outlined,
                     ),
                   ],
                 ),
+              ),
               ),
             ],
           ),
